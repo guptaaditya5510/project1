@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+}
+video{
+    object-fit: contain; 
+}
+
+h1{
+    position: absolute;
+    color: white;
+    top: 35vh;
+    left: 45%;
+    font-size: 45px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+h1 span{
+    animation: ani 7s linear forwards;
+    display: inline-block;
+    opacity: 0;
+}
+h3{
+    position: absolute;
+    color: white;
+    top: 43vh;
+    left: 38%;
+    font-size: 40px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+h3 span{
+    animation: ani1 7s linear forwards;
+    display: inline-block;
+    opacity: 0;
+}
+
+@keyframes ani{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(2){
+    animation-delay: 3.5s;
+}
+h1 span:nth-child(3){
+    animation-delay: 4s;
+}
+
+@keyframes ani1{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+h3 span:nth-child(1){
+    animation-delay: 1s;
+}
+h3 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+h3 span:nth-child(3){
+    animation-delay: 2s;
+}
+h3 span:nth-child(4){
+    animation-delay: 2.5s;
+}
+h3 span:nth-child(5){
+    animation-delay: 3s;
+}h3 span:nth-child(6){
+    animation-delay: 3.5s;
+}
+h3 span:nth-child(7){
+    animation-delay: 4s;
+}
+
+p{
+    position: absolute;
+    color: white;
+    top: 60vh;
+    left: 30%;
+    font-size: 30px;
+    font-family: 'Zen Loop', cursive;
+    opacity: 0;
+    transition-duration: 2s;
+}
